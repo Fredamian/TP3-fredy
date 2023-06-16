@@ -15,7 +15,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutX="74.0" layoutY="75.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="299.0" />
       <ImageView fitHeight="271.0" fitWidth="267.0" layoutX="90.0" layoutY="84.0">
          <image>
-            <Image url="@professor.png" />
+            <Image url="@Images/professor.png" />
          </image>
       </ImageView>
       <TextField fx:id="profFirstName" alignment="CENTER" layoutX="479.0" layoutY="128.0" prefHeight="32.0" prefWidth="221.0" promptText="First Name " style="-fx-background-radius: 9;">
@@ -70,7 +70,7 @@
       </TextField>
       <ImageView fitHeight="223.0" fitWidth="232.0" layoutX="190.0" layoutY="405.0">
          <image>
-            <Image url="@photo@4x.png" />
+            <Image url="@Images/photo@4x.png" />
          </image>
       </ImageView>
       <Button layoutX="93.0" layoutY="431.0" mnemonicParsing="false" style="-fx-background-radius: 20; -fx-background-color: #fff;" text="add photo" textFill="#004e5a">
@@ -83,15 +83,15 @@
             <Font size="27.0" />
          </font>
       </Button>
-      <Label layoutX="484.0" layoutY="42.0">
-         <font>
-            <Font size="22.0" />
-         </font>
-      </Label>
       <Label fx:id="labelProf" alignment="CENTER" contentDisplay="CENTER" layoutX="415.0" layoutY="16.0" prefHeight="28.0" prefWidth="463.0" textFill="WHITE">
          <font>
             <Font size="32.0" />
          </font>
       </Label>
+      <Button fx:id="goHome" layoutX="673.0" layoutY="499.0" mnemonicParsing="false" onAction="#regProf" prefHeight="52.0" prefWidth="149.0" style="-fx-background-radius: 19; -fx-background-color: transparent;" text="cancel" underline="true">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

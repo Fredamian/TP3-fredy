@@ -19,17 +19,17 @@
       <Circle fill="WHITE" layoutX="709.0" layoutY="319.0" onMouseClicked="#registUser" opacity="0.62" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="167.0" fitWidth="159.0" layoutX="631.0" layoutY="229.0" onMouseClicked="#registUser">
          <image>
-            <Image url="@graduated.png" />
+            <Image url="@Images/graduated.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="151.0" fitWidth="143.0" layoutX="125.0" layoutY="234.0" onMouseClicked="#goProf">
          <image>
-            <Image url="@professor.png" />
+            <Image url="@Images/professor.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="169.0" fitWidth="164.0" layoutX="373.0" layoutY="229.0" onMouseClicked="#goEmployee">
          <image>
-            <Image url="@employee.png" />
+            <Image url="@Images/employee.png" />
          </image>
       </ImageView>
       <Label layoutX="359.0" layoutY="526.0" text="Who are you?" textFill="WHITE">
@@ -39,7 +39,7 @@
       </Label>
       <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="39.0" layoutY="54.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@go-back.png" />
+            <Image url="@Images/go-back.png" />
          </image>
       </ImageView>
    </children>

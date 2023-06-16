@@ -3,9 +3,12 @@ package com.example.tpc9;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -40,11 +43,17 @@ public class SignInUser {
     @FXML
     private Button buttonLogin;
 
+    @FXML
+    private ImageView close;
+
     public void showArrow(MouseEvent event) throws IOException{
         loginMessageLabel2.setText("Welcome come back ");
     }
 
-
+    public void closeHome(MouseEvent event) throws IOException {
+        Stage stage = (Stage) close.getScene().getWindow();
+        stage.close();
+    }
 
     public void signUpButtonOnAction(ActionEvent e) throws IOException {
         Parent root = null;
@@ -74,8 +83,8 @@ public class SignInUser {
         Connection connectDB = connectNow.getConection();
 
         try {
-            String verifyLogin = "SELECT count(1) from UserAcounts where Username = '" + usernameTextField.getText() + "' AND Password = '" + passwordField.getText() + "';\n";
-            String getName = "SELECT Firstname FROM UserAcounts WHERE Username = '" + usernameTextField.getText() + "';\n";
+            String verifyLogin = "SELECT count(1) from Professors where Username = '" + usernameTextField.getText() + "' AND Password = '" + passwordField.getText() + "';\n";
+            String getName = "SELECT Firstname FROM Professors WHERE Username = '" + usernameTextField.getText() + "';\n";
             Statement statement1 = connectDB.createStatement();
             Statement statement2 = connectDB.createStatement();
             ResultSet queryResult = statement1.executeQuery(verifyLogin);
@@ -102,9 +111,18 @@ public class SignInUser {
     public String returnUsername(){
         return username;
     }
+public void initialize(){
+    passwordField.setOnKeyPressed(event -> {
+        if (event.getCode() == KeyCode.ENTER) {
+            if (!usernameTextField.getText().isBlank() && !passwordField.getText().isBlank()) {
+                validateLogin();
+            } else {
+                loginMessageLabel.setOpacity(0.62);
+                loginMessageLabel.setText("Please enter username and password");
+            }
+        }
+    });
 
-
-
-
+    }
 
 }

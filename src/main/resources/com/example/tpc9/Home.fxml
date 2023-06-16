@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
@@ -23,17 +22,17 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="131.0" layoutX="411.0" layoutY="152.0" opacity="0.62" stroke="WHITE" strokeType="INSIDE" width="133.0" />
       <ImageView fitHeight="121.0" fitWidth="124.0" layoutX="415.0" layoutY="157.0">
          <image>
-            <Image url="@graduated.png" />
+            <Image url="@Images/graduated.png" />
          </image>
       </ImageView>
       <ImageView fx:id="teacherIMG" fitHeight="117.0" fitWidth="111.0" layoutX="82.0" layoutY="157.0" onMouseClicked="#showArrow">
          <image>
-            <Image url="@professor.png" />
+            <Image url="@Images/professor.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="119.0" fitWidth="118.0" layoutX="248.0" layoutY="155.0">
          <image>
-            <Image url="@employee.png" />
+            <Image url="@Images/employee.png" />
          </image>
       </ImageView>
       <TextField fx:id="usernameTextField" layoutX="620.0" layoutY="151.0" prefHeight="32.0" prefWidth="194.0" promptText="                            username" style="-fx-background-radius: 8;">
@@ -42,12 +41,12 @@
          </font></TextField>
       <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="786.0" layoutY="153.0">
          <image>
-            <Image url="@account.png" />
+            <Image url="@Images/account.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="787.0" layoutY="208.0">
          <image>
-            <Image url="@key.png" />
+            <Image url="@Images/key.png" />
          </image>
       </ImageView>
       <Label layoutX="621.0" layoutY="279.0" opacity="0.78" text="No Account?" textFill="WHITE">
@@ -87,9 +86,13 @@
       </Button>
       <ImageView fitHeight="200.0" fitWidth="179.0" layoutX="663.0" layoutY="415.0">
          <image>
-            <Image url="@Ativo%206@4x.png" />
+            <Image url="@Images/Ativo%206@4x.png" />
          </image>
       </ImageView>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fx:id="close" fitHeight="60.0" fitWidth="60.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#closeHome">
+         <image>
+            <Image url="@Images/power.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

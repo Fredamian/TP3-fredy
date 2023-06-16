@@ -15,12 +15,12 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutX="74.0" layoutY="75.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="299.0" />
       <ImageView fitHeight="271.0" fitWidth="267.0" layoutX="90.0" layoutY="84.0">
          <image>
-            <Image url="@employee.png" />
+            <Image url="@Images/employee.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="223.0" fitWidth="232.0" layoutX="189.0" layoutY="395.0">
          <image>
-            <Image url="@photo@4x.png" />
+            <Image url="@Images/photo@4x.png" />
          </image>
       </ImageView>
       <TextField fx:id="empFirstName" alignment="CENTER" layoutX="479.0" layoutY="128.0" prefHeight="32.0" prefWidth="221.0" promptText="First Name" style="-fx-background-radius: 9; -fx-background-color: #fff;">
@@ -74,6 +74,11 @@
          </font>
       </Button>
       <Button fx:id="signEmp" layoutX="532.0" layoutY="509.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="149.0" style="-fx-background-radius: 19; -fx-background-color: #111132;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="goHome" layoutX="683.0" layoutY="509.0" mnemonicParsing="false" onAction="#regProf" prefHeight="52.0" prefWidth="149.0" style="-fx-background-radius: 19; -fx-background-color: transparent;" text="cancel" underline="true">
          <font>
             <Font size="27.0" />
          </font>
