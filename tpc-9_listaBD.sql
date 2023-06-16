@@ -8,7 +8,7 @@ insert into Professors(Firstname, Lastname,Code, Username,Day,Month,Year, Passwo
 insert into Professors(Firstname, Lastname,Code, Username,Day,Month,Year, Password) values ("Ericles","Fonseca",6161613,"emossOK",10,11,2001,"eck");
 
 SELECT Firstname FROM UserAcounts WHERE Username = "Froyd";
-SELECT count(1) from UserAcounts where Username = "Froyd" AND Password = "Fredboy17$";
+SELECT count(1) from UserAcounts where Username = "emossOK" AND Password = "eck";
 
 
 create table fotos (
@@ -18,11 +18,11 @@ create table fotos (
 );
 
 insert into fotos (nome, fotoperfil) values
-  ("Ericles", "file:src/main/resources/com/example/tpc9/Images/gemstone.png"),
-  ("Fredy", "file:src/main/resources/com/example/tpc9/Images/gemstone.png"),
-  ("Paulo", "file:src/main/resources/com/example/tpc9/Images/gemstone.png"),
-  ("Lenice", "file:src/main/resources/com/example/tpc9/Images/gemstone.png"),
-  ("Nelson", "file:src/main/resources/com/example/tpc9/Images/gemstone.png");
+  ("Ericles", "file:src/main/resources/com/example/tpc9/Images/ericles.jpeg"),
+  ("Fredy",   "file:src/main/resources/com/example/tpc9/Images/marko.jpegg"),
+  ("Paulo",   "file:src/main/resources/com/example/tpc9/Images/gemstone.png"),
+  ("Lenice",  "file:src/main/resources/com/example/tpc9/Images/rosa.jpeg"),
+  ("Nelson",  "file:src/main/resources/com/example/tpc9/Images/gemstone.png");
 
 select * from fotos;
 

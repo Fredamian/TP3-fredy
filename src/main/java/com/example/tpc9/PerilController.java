@@ -39,28 +39,6 @@ public class PerilController implements Initializable {
     @FXML
     public Label peril;
 
-    @FXML
-    public Button settings;
-
-    @FXML
-    public Button posts;
-
-    @FXML
-    public Button newsFeed;
-
-    @FXML
-    public Button eventos;
-
-    @FXML
-    public Button grupos;
-
-    public void goHome(MouseEvent event) throws IOException {
-        Parent go2 = FXMLLoader.load(getClass().getResource("Home.fxml"));
-        Scene goScene2 = new Scene(go2);
-        Stage goStage2 = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        goStage2.setScene(goScene2);
-        goStage2.show();
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -80,9 +58,9 @@ public class PerilController implements Initializable {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                if(resultSet.next() == true){
-                Image img = new Image(resultSet.getString("fotoperfil"));
-                minhafoto.setFill(new ImagePattern(img));
+                if (resultSet.next() == true) {
+                    Image img = new Image(resultSet.getString("fotoperfil"));
+                    minhafoto.setFill(new ImagePattern(img));
                 } else {
                     Image img = new Image("file:src/main/resources/com/example/tpc9/Images/gemstone.png");
                     minhafoto.setFill(new ImagePattern(img));
@@ -100,3 +78,4 @@ public class PerilController implements Initializable {
         minhafoto3.setFill(new ImagePattern(img3));
     }
 }
+

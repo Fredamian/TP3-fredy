@@ -89,10 +89,11 @@
             <Image url="@Images/Ativo%206@4x.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="close" fitHeight="60.0" fitWidth="60.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#closeHome">
+      <ImageView fx:id="close" fitHeight="40.0" fitWidth="40.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#closeHome" opacity="0.7">
          <image>
-            <Image url="@Images/power.png" />
+            <Image url="@Images/4x/close@4x.png" />
          </image>
       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" layoutX="13.0" layoutY="9.0" onMouseClicked="#closeHome" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="58.0" />
    </children>
 </Pane>
