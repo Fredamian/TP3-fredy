@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #004e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #004e5a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tpc9.SignUpUser">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="294.0" layoutX="74.0" layoutY="75.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="299.0" />
       <ImageView fitHeight="271.0" fitWidth="267.0" layoutX="90.0" layoutY="84.0">

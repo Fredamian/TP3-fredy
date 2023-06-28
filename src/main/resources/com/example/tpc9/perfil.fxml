@@ -22,27 +22,27 @@
                </font>
             </Button>
             <Line endX="-6.06756591796875" endY="14.439201354980469" layoutX="768.0" layoutY="21.0" startX="-6.06756591796875" startY="-15.780393600463867" stroke="#b5b4b4" />
-            <Button layoutX="647.0" layoutY="-3.0" mnemonicParsing="false" opacity="0.85" style="-fx-background-color: transparent;" text="Settings" textFill="WHITE">
+            <Button fx:id="settings" layoutX="647.0" layoutY="-3.0" mnemonicParsing="false" opacity="0.7" style="-fx-background-color: transparent;" text="Settings" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button layoutX="573.0" layoutY="-3.0" mnemonicParsing="false" opacity="0.85" style="-fx-background-color: transparent;" text="Posts" textFill="WHITE">
+            <Button fx:id="posts" layoutX="573.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#postPane" opacity="0.7" style="-fx-background-color: transparent;" text="Posts" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button layoutX="431.0" layoutY="-4.0" mnemonicParsing="false" opacity="0.85" style="-fx-background-color: transparent;" text="News Feeds" textFill="WHITE">
+            <Button fx:id="newsFeed" layoutX="431.0" layoutY="-4.0" mnemonicParsing="false" opacity="0.7" style="-fx-background-color: transparent;" text="News Feeds" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button layoutX="334.0" layoutY="-5.0" mnemonicParsing="false" opacity="0.85" style="-fx-background-color: transparent;" text="Eventos" textFill="WHITE">
+            <Button fx:id="eventos" layoutX="334.0" layoutY="-5.0" mnemonicParsing="false" opacity="0.7" style="-fx-background-color: transparent;" text="Eventos" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button layoutX="241.0" layoutY="-4.0" mnemonicParsing="false" opacity="0.85" style="-fx-background-color: transparent;" text="Grupos" textFill="WHITE">
+            <Button fx:id="grupos" layoutX="241.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#grupPane" opacity="0.7" style="-fx-background-color: transparent;" text="Grupos" textFill="WHITE">
                <font>
                   <Font size="25.0" />
                </font>
@@ -56,15 +56,62 @@
                   <Font size="36.0" />
                </font>
             </Label>
-            <Circle fx:id="minhafoto" fill="#1f93ff00" layoutX="124.0" layoutY="147.0" radius="86.0" stroke="#ffffff00" strokeType="INSIDE" />
+            <Circle fx:id="minhafoto" fill="#1f93ff00" layoutX="124.0" layoutY="147.0" radius="86.0" stroke="#ffffffaf" strokeType="INSIDE" />
          </children></Pane>
-      <ScrollPane layoutX="259.0" layoutY="43.0" prefHeight="607.0" prefWidth="641.0" vbarPolicy="ALWAYS">
+      <ScrollPane fx:id="groups" layoutX="259.0" layoutY="43.0" prefHeight="607.0" prefWidth="641.0" style="visibility: true;" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="1166.0" prefWidth="623.0">
+               <children>
+                  <Pane layoutX="34.0" layoutY="33.0" prefHeight="93.0" prefWidth="557.0" style="-fx-background-color: #BCBCBC; -fx-background-radius: 8;">
+                     <children>
+                        <Circle fx:id="minhafoto2" fill="#2197ff00" layoutX="58.0" layoutY="45.0" radius="37.0" stroke="#ffffff00" strokeType="INSIDE" />
+                        <Label layoutX="127.0" layoutY="23.0" prefHeight="43.0" prefWidth="293.0" text="Pedrada Event's">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="34.0" layoutY="153.0" prefHeight="93.0" prefWidth="557.0" style="-fx-background-color: #BCBCBC; -fx-background-radius: 8;">
+                     <children>
+                        <Label layoutX="127.0" layoutY="23.0" prefHeight="43.0" prefWidth="337.0" text="Porta dos Fundos">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Circle fx:id="minhafoto3" fill="#1f93ff00" layoutX="58.0" layoutY="45.0" radius="37.0" stroke="#ffffff00" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="34.0" layoutY="271.0" prefHeight="93.0" prefWidth="557.0" style="-fx-background-color: #BCBCBC; -fx-background-radius: 8;">
+                     <children>
+                        <Circle fx:id="minhafoto4" fill="#1f93ff00" layoutX="58.0" layoutY="45.0" radius="37.0" stroke="#ffffff00" strokeType="INSIDE" />
+                        <Label layoutX="127.0" layoutY="23.0" prefHeight="43.0" prefWidth="293.0" text="Rolling Stone">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="36.0" layoutY="387.0" prefHeight="93.0" prefWidth="557.0" style="-fx-background-color: #BCBCBC; -fx-background-radius: 8;">
+                     <children>
+                        <Circle fx:id="minhafoto5" fill="#1f93ff00" layoutX="58.0" layoutY="45.0" radius="37.0" stroke="#ffffff00" strokeType="INSIDE" />
+                        <Label layoutX="127.0" layoutY="23.0" prefHeight="43.0" prefWidth="293.0" text="Chill">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </content></ScrollPane>
+      <ScrollPane fx:id="post" layoutX="259.0" layoutY="43.0" prefHeight="607.0" prefWidth="641.0" style="visibility: false;" vbarPolicy="ALWAYS">
          <content>
             <AnchorPane prefHeight="1166.0" prefWidth="623.0">
                <children>
                   <Pane layoutX="34.0" layoutY="33.0" prefHeight="536.0" prefWidth="557.0" style="-fx-background-color: #BCBCBC; -fx-background-radius: 8;">
                      <children>
-                        <Label layoutX="13.0" layoutY="74.0" text="My new wallpaper" textFill="#004e5a">
+                        <Label layoutX="13.0" layoutY="74.0" text="Yeah" textFill="#004e5a">
                            <font>
                               <Font size="19.0" />
                            </font>
@@ -74,7 +121,7 @@
                               <Image url="@Images/wallpaperSombra.png" />
                            </image>
                         </ImageView>
-                        <Circle fx:id="minhafoto2" fill="#1f93ff00" layoutX="39.0" layoutY="38.0" radius="31.0" stroke="#ffffff00" strokeType="INSIDE" />
+                        <Circle fx:id="post1" fill="#1f93ff00" layoutX="39.0" layoutY="38.0" radius="31.0" stroke="#ffffff00" strokeType="INSIDE" />
                         <Label layoutX="89.0" layoutY="23.0" prefHeight="28.0" prefWidth="238.0" text="Ericles Bomba" textFill="#004e5a">
                            <font>
                               <Font size="22.0" />
@@ -90,7 +137,7 @@
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <Circle fx:id="minhafoto3" fill="#1f93ff00" layoutX="39.0" layoutY="38.0" radius="31.0" stroke="#ffffff00" strokeType="INSIDE" />
+                        <Circle fx:id="post2" fill="#1f93ff00" layoutX="39.0" layoutY="38.0" radius="31.0" stroke="#ffffff00" strokeType="INSIDE" />
                         <Label layoutX="13.0" layoutY="74.0" text="New Bike #felling blessed" textFill="#004e5a">
                            <font>
                               <Font size="19.0" />
@@ -105,11 +152,7 @@
                   </Pane>
                </children>
             </AnchorPane>
-         </content></ScrollPane>
-      <ScrollPane fx:id="scroller1" layoutX="259.0" layoutY="43.0" onMouseClicked="#Grupos" opacity="0.0" prefHeight="607.0" prefWidth="641.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
+         </content>
       </ScrollPane>
    </children>
 </Pane>

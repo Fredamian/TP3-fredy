@@ -84,11 +84,6 @@
             <Font name="Arial" size="13.0" />
          </font>
       </Button>
-      <ImageView fitHeight="200.0" fitWidth="179.0" layoutX="663.0" layoutY="415.0">
-         <image>
-            <Image url="@Images/Ativo%206@4x.png" />
-         </image>
-      </ImageView>
       <ImageView fx:id="close" fitHeight="40.0" fitWidth="40.0" layoutX="22.0" layoutY="16.0" onMouseClicked="#closeHome" opacity="0.7">
          <image>
             <Image url="@Images/4x/close@4x.png" />
